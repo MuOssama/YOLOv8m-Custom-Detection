@@ -5,8 +5,8 @@ google colab is used to save your hard disk space and to speed up the training i
 
 ## how to use
 1- Download the google colab and upload it to you drive and open it to use google colab 
-2- [this link to label your custom dataset](https://www.youtube.com/watch?v=LNwODJXcvt4)
-3- if you want to freeze some layers:
+2- [this link to label your custom dataset](https://www.youtube.com/watch?v=LNwODJXcvt4)\
+3- if you want to freeze some layers:\
 this function used to freeze some layers and\
 the variabke num_freeze is the number of needed layer to freeze
    ```python

@@ -4,7 +4,7 @@ fine tunning a pretrained model, YOLO v8m is used in this repo to train a custom
 google colab is used to save your hard disk space and to speed up the training if you have slow GPU
 
 ## how to use
-1- Download the google colab and upload it to you drive and open it to use google colab 
+1- Download the google colab and upload it to you drive and open it to use google colab \
 2- [this link to label your custom dataset](https://www.youtube.com/watch?v=LNwODJXcvt4)\
 3- if you want to freeze some layers:\
 this function used to freeze some layers and\

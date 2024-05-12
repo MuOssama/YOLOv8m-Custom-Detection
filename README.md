@@ -9,17 +9,18 @@ google colab is used to save your hard disk space and to speed up the training i
 3- if you want to freeze some layers:
 this function used to freeze some layers and\
 the variabke num_freeze is the number of needed layer to freeze
-> def freeze_layer(trainer):
->  model = trainer.model
->  num_freeze = 10\
->  print(f"Freezing {num_freeze} layers")\
->  freeze = [f'model.{x}.' for x in range(num_freeze)]  # layers to freeze\
->  for k, v in model.named_parameters():\
->      v.requires_grad = True  # train all layers\
->      if any(x in k for x in freeze):\
->          print(f'freezing {k}')\
->          v.requires_grad = False\
->  print(f"{num_freeze} layers are freezed.")
+   ```python
+   def freeze_layer(trainer):
+       model = trainer.model
+       num_freeze = 10
+       print(f"Freezing {num_freeze} layers")
+       freeze = [f'model.{x}.' for x in range(num_freeze)]  # Layers to freeze
+       for k, v in model.named_parameters():
+           v.requires_grad = True  # Train all layers
+           if any(x in k for x in freeze):
+               print(f'Freezing {k}')
+               v.requires_grad = False
+       print(f"{num_freeze} layers are frozen.")
 
 then add it to custom callback as follow
 >>model = YOLO("yolov8m.pt")

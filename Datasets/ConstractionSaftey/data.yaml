@@ -1,0 +1,7 @@
+path: ../drive/MyDrive/Datasets/ConstractionSaftey
+train: ../train/images
+val: ../train/images
+test: ../train/images
+
+nc: 2
+names: ['awak', 'drowsy']
